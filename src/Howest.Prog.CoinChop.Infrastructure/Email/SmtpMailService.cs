@@ -30,6 +30,8 @@ $@"Hi {recipientName},<br />
             SendMail(new MailAddress(recipientEmail, recipientName), title, body);
         }
 
+        public void SendAddedToGroupMail(string recipientName, string recipientEmail, TokenMailTemplateData templateData) => throw new System.NotImplementedException();
+
         public void SendMail(MailAddress recipient, string title, string body)
         {
             MailMessage mail = new MailMessage();
